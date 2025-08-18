@@ -38,8 +38,8 @@ const PresidentTimeline: React.FC = () => {
         </div>
         <div>
           <ol>
-            {presidents.slice(0, index).map((name, i) => (
-              <li key={i}>{name}</li>
+            {presidents.slice(0, index).map((president, i) => (
+              <li key={president.id}>{president.name}</li>
             ))}
           </ol>
         </div>
